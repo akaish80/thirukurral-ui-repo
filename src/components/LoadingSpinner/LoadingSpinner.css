@@ -4,25 +4,34 @@
   }
 }
 
+
 .ds-loading-spinner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   inline-size: 40px;
   block-size: 40px;
-  border: 3px solid color-mix(in srgb, var(--color-brand) 20%, white);
+}
+
+.ds-loading-spinner__circle {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  border: 3px solid #e0e0e0;
   border-top-color: var(--color-brand);
-  border-radius: 999px;
+  border-radius: 50%;
   animation: ds-spin 1s linear infinite;
+  box-sizing: border-box;
 }
 
 .ds-loading-spinner--sm {
   inline-size: 20px;
   block-size: 20px;
 }
-
 .ds-loading-spinner--md {
   inline-size: 40px;
   block-size: 40px;
 }
-
 .ds-loading-spinner--lg {
   inline-size: 56px;
   block-size: 56px;

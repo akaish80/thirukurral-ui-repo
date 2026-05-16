@@ -7,5 +7,9 @@ export interface LoadingSpinnerProps {
 }
 
 export function LoadingSpinner({ size = 'md', label = 'Loading' }: LoadingSpinnerProps) {
-  return <span className={clsx('ds-loading-spinner', `ds-loading-spinner--${size}`)} aria-label={label} role="status" />;
+  return (
+    <span className={clsx('ds-loading-spinner', `ds-loading-spinner--${size}`)} aria-label={label} role="status">
+      <span className="ds-loading-spinner__circle" />
+    </span>
+  );
 }
