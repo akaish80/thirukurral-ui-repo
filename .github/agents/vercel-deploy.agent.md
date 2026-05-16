@@ -15,6 +15,6 @@ Prepare safe deployments and validate release quality before publishing.
 - Publish deployment URL in pull request comments.
 
 ## Required Secrets
-- VERCEL_TOKEN
+- PERSONAL_TOKEN
 - VERCEL_ORG_ID
 - VERCEL_PROJECT_ID
