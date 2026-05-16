@@ -1,0 +1,29 @@
+@keyframes ds-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ds-loading-spinner {
+  inline-size: 40px;
+  block-size: 40px;
+  border: 3px solid color-mix(in srgb, var(--color-brand) 20%, white);
+  border-top-color: var(--color-brand);
+  border-radius: 999px;
+  animation: ds-spin 1s linear infinite;
+}
+
+.ds-loading-spinner--sm {
+  inline-size: 20px;
+  block-size: 20px;
+}
+
+.ds-loading-spinner--md {
+  inline-size: 40px;
+  block-size: 40px;
+}
+
+.ds-loading-spinner--lg {
+  inline-size: 56px;
+  block-size: 56px;
+}

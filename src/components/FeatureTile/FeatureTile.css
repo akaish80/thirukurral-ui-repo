@@ -1,0 +1,35 @@
+.ds-feature-tile {
+  display: grid;
+  gap: var(--space-3);
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  padding: var(--space-5);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.ds-feature-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.ds-feature-tile__icon {
+  font-size: 1.5rem;
+}
+
+.ds-feature-tile__title {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.ds-feature-tile__description {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.ds-feature-tile__arrow {
+  color: var(--color-brand-strong);
+  font-weight: 700;
+}

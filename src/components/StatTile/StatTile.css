@@ -1,0 +1,19 @@
+.ds-stat-tile {
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: grid;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+.ds-stat-tile__value {
+  font-size: clamp(1.4rem, 3.3vw, 2.4rem);
+  font-weight: 800;
+  color: var(--color-brand-strong);
+}
+
+.ds-stat-tile__label {
+  color: var(--color-text-muted);
+}
